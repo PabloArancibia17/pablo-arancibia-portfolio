@@ -20,9 +20,12 @@ html {
 /*----------------------Header-----------------------------------*/
 header {
   height: 100%;
+  width: 100vw;
   display: inline;
   align-content: stretch;
-  justify-content: space-evenly; }
+  justify-content: space-evenly; 
+  padding-left: 0;
+}
 
 .header__title {
   color: #a5a3a3; }
@@ -59,7 +62,8 @@ footer {
 /*---------------------Footer-----------------------*/
 /*------------------------     Me     ---------------------------*/
 .header--variation {
-  background-color: black; }
+  background-color: black;
+  }
 
 .title {
   font-size: 40px;
