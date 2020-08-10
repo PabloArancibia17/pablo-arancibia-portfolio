@@ -35,18 +35,15 @@ header {
 
 .titleAnimation {
   animation-name: titleAnimation;
-  animation-duration: 4s; }
+  animation-duration: 5s; }
 
 @keyframes titleAnimation {
   0% {
-    opacity: 0;
-    transform: scale(0);
-    transform-origin: 50% 50%; }
+    transform: skewX(-30deg) translate(1000px); }
   50% {
-    transform: scale(1);
-    transform-origin: 50% 50%; }
+    transform: skewX(-10deg); }
   100% {
-    opacity: 1; } }
+    transform: skewX(0); } }
 
 /*------------------------MENU--------------------------*/
 .menu {
@@ -63,6 +60,22 @@ header {
 
 /*------------------------MENU--------------------------*/
 /*----------------------Header-----------------------------------*/
+.indexAnimation {
+  animation-name: indexAnimation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+@keyframes indexAnimation {
+  0% {
+    transform: scale(0.1);
+    transform-origin: 0 0; }
+  50% {
+    transform: scale(1) rotateY(180deg);
+    transform-origin: 100% 100%; }
+  100% {
+    transform: scale(0.1);
+    transform-origin: 0 0; } }
+
 /*--------------------   INDEX  ---------------------------------*/
 /*---------------------Footer-----------------------*/
 /*---------------------Address------------------*/
@@ -71,7 +84,15 @@ footer {
   font-size: 12px;
   color: #4D4D4D;
   margin-left: 10px;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, white, #436D89); }
+  footer p {
+    margin-bottom: 3px; }
+  footer .imgFooter {
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+    padding-left: 2px; }
 
 /*---------------------Address------------------*/
 /*---------------------Footer-----------------------*/
