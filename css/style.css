@@ -12,9 +12,9 @@ html {
   box-sizing: border-box; }
 
 .body {
-  background-color: #393939;
+  background-color: white;
   position: relative;
-  color: #a5a3a3;
+  color: #4D4D4D;
   font-size: 15px;
   letter-spacing: 5px; }
 
@@ -28,44 +28,12 @@ header {
   justify-content: space-evenly; }
 
 .header__title {
-  color: #a5a3a3; }
+  color: #4D4D4D; }
 
 .header__title:hover {
-  color: #a5a3a3; }
+  color: #4D4D4D; }
 
-/*------------------------MENU--------------------------*/
-.menu {
-  display: flex;
-  flex-flow: row wrap; }
-
-.menu--textColor {
-  color: sandybrown; }
-
-.menu--linkFormat {
-  color: black;
-  text-decoration: none;
-  vertical-align: 13px; }
-
-/*------------------------MENU--------------------------*/
-/*----------------------Header-----------------------------------*/
-/*--------------------   INDEX  ---------------------------------*/
-/*---------------------Footer-----------------------*/
-/*---------------------Address------------------*/
-footer {
-  height: 100%;
-  background-image: linear-gradient(to bottom, #393939, black);
-  font-size: 10px;
-  color: sandybrown; }
-
-/*---------------------Address------------------*/
-/*---------------------Footer-----------------------*/
-/*------------------------     Me     ---------------------------*/
-.header--variation {
-  background-color: black; }
-
-.title {
-  font-size: 40px;
-  color: sandybrown;
+.titleAnimation {
   animation-name: titleAnimation;
   animation-duration: 4s; }
 
@@ -80,19 +48,52 @@ footer {
   100% {
     opacity: 1; } }
 
+/*------------------------MENU--------------------------*/
+.menu {
+  display: flex;
+  flex-flow: row wrap; }
+
+.menu--textColor {
+  color: #436D89; }
+
+.menu--linkFormat {
+  color: black;
+  text-decoration: none;
+  vertical-align: 13px; }
+
+/*------------------------MENU--------------------------*/
+/*----------------------Header-----------------------------------*/
+/*--------------------   INDEX  ---------------------------------*/
+/*---------------------Footer-----------------------*/
+/*---------------------Address------------------*/
+footer {
+  height: 100%;
+  font-size: 12px;
+  color: #4D4D4D;
+  margin-left: 10px;
+  margin-bottom: 0; }
+
+/*---------------------Address------------------*/
+/*---------------------Footer-----------------------*/
+/*------------------------     Me     ---------------------------*/
+.article {
+  height: 100vh; }
+
 .article__picture {
-  height: 500px; }
+  height: 80vh; }
 
 .article__picture p {
   color: bisque; }
 
 .article__picture__img {
-  height: 530px; }
+  height: 100vh;
+  vertical-align: center; }
 
 .article__info {
-  border: 10px; }
+  border: 10px;
+  font-size: 20px; }
 
 /*------------------------     Me     ---------------------------*/
 /*------------------------     FORM     ---------------------------*/
 .variationColor {
-  background-image: linear-gradient(to top, #393939, black); }
+  background-image: linear-gradient(to top, #333333, black); }

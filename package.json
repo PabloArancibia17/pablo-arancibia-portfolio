@@ -1,13 +1,11 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "repository": {
     "type": "git",
@@ -22,5 +20,7 @@
   "devDependencies": {
     "node-sass": "^4.14.1",
     "nodemon": "^2.0.4"
-  }
+  },
+  "dependencies": {},
+  "description": ""
 }
