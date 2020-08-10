@@ -2,7 +2,10 @@
 /*---------------------General----------------------------------*/
 /* etiqueta raíz */
 html {
+  height: 100%;
+  width: 100%;
   font-size: 62.5%; }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,12 +23,9 @@ html {
 /*----------------------Header-----------------------------------*/
 header {
   height: 100%;
-  width: 100vw;
   display: inline;
   align-content: stretch;
-  justify-content: space-evenly; 
-  padding-left: 0;
-}
+  justify-content: space-evenly; }
 
 .header__title {
   color: #a5a3a3; }
@@ -47,13 +47,12 @@ header {
   vertical-align: 13px; }
 
 /*------------------------MENU--------------------------*/
-
 /*----------------------Header-----------------------------------*/
-
 /*--------------------   INDEX  ---------------------------------*/
 /*---------------------Footer-----------------------*/
 /*---------------------Address------------------*/
 footer {
+  height: 100%;
   background-image: linear-gradient(to bottom, #393939, black);
   font-size: 10px;
   color: sandybrown; }
@@ -62,8 +61,7 @@ footer {
 /*---------------------Footer-----------------------*/
 /*------------------------     Me     ---------------------------*/
 .header--variation {
-  background-color: black;
-  }
+  background-color: black; }
 
 .title {
   font-size: 40px;
