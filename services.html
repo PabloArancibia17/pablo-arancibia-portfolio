@@ -6,14 +6,15 @@
     <meta name="keywords" content="PABLO ARANCIBIA, ME, MENDOZA">
     <title>Services</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="fonts/DIN-BlackItalic.ttf" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">    <link href="fonts/DIN-BlackItalic.ttf" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
 </head>
 <body class="body">
 
-<header class="col-lg-12 col-md-12 col-sm-12 container-fluid" style="padding: 0">
+<header class="col-lg-12 col-md-12 col-sm-12 container-fluid">
 
     <nav class="row">
         <ul class="col-lg-12 col-md-12 col-sm-12 nav nav-pills justify-content-end">
@@ -24,7 +25,7 @@
                 <a class="menu--textColor nav-link" href="me.html">Me</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="menu--textColor nav-link dropdown-toggle" 
+                <a class="menu--textColor nav-link dropdown-toggle"
                    data-toggle="dropdown" href="skills.html" role="button"
                    aria-haspopup="true" aria-expanded="false">Skills</a>
                 <div class="dropdown-menu">
@@ -44,29 +45,113 @@
 
     <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="row">
-            <img alt="logo" src="multimedia/General/logo-isotipo.png" class="col-lg-6 col-md-8 col-sm-12 titleAnimation img-fluid">
+            <a href="index.html">
+            <img alt="logo" src="multimedia/General/logo-isotipo.png"
+                 class="col-lg-6 col-md-8 col-sm-12 titleAnimation img-fluid">
+            </a>
         </div>
     </div>
 </header>
 
 
-<main class="d-flex justify-content-center align-items-center" style="height: 55vh">
+<nav class="nav-services container">
+
+    <h1 class="services-title d-flex justify-content-center">SERVICES</h1><br><br><br>
     
-    <h1>WORKING ON IT!!!</h1>
-    
-    
-</main>
+    <div class="card-deck">
+        <div class="card" style="background-color: #E4BD96">
+            <a href="#business">
+            <div class="card-header align-items-center d-flex justify-content-end">                
+                <img alt="idea-img" src="multimedia/Placeholders/idea-minimalist.png" class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">SELL YOUR IDEA</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            </a>
+        </div>
+        <div class="card" style="background-color: #B4D0E9">
+            <a href="#games">
+            <div class="card-header align-items-center d-flex justify-content-end">
+                <img alt="idea-game" src="multimedia/Placeholders/gamepad.png" class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">TRY SOMETHING NEW</h4>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="#webpage">
+            <div class="card-header align-items-center d-flex justify-content-end">
+                <img alt="idea-web" src="multimedia/Placeholders/browser.png" class="img-fluid">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">DIGITAL IDENTITY</h4>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            </a>
+        </div>
+    </div>
+</nav>
+<br><br><br><br><br>
 
 
+<section class="col-lg-12 col-md-12 col-sm-12 container business">
+    <div class="row">
+        <div class="container col-lg-6 col-md-4 col-sm-8" id="business">
+            <h2 class="services-title">BUSINESS</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores autem beatae cupiditate earum id ipsa laboriosam,
+                nostrum nulla placeat, quae tenetur vero, vitae! Blanditiis
+                eveniet facilis fuga incidunt quo, sit.
+            </p>
+        </div>
+        <img src="multimedia/Placeholders/idea-graphic-variation.jpg" alt="business-img"
+             class="col-lg-4 col-md-4 col-sm-8 img-responsive">
+    </div>
+</section>
+<section class="col-lg-12 col-md-12 col-sm-12 container-fluid games">
+    <div class="row">
+        <div class="container col-lg-6 col-md-4 col-sm-8" id="games">
+            <h2 class="services-title">GAMES</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores autem beatae cupiditate earum id ipsa laboriosam,
+                nostrum nulla placeat, quae tenetur vero, vitae! Blanditiis
+                eveniet facilis fuga incidunt quo, sit.
+            </p>
+        </div>
+        <img src="multimedia/Placeholders/videogames-variation.jpg" alt="business-img"
+             class="col-lg-4 col-md-4 col-sm-8">
+    </div>
+</section>
+<section class="col-lg-12 col-md-12 col-sm-12 container-fluid webpage">
+    <div class="row">
+        <div class="container col-lg-6 col-md-4 col-sm-8" id="webpage">
+            <h2 class="services-title">WEBPAGE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores autem beatae cupiditate earum id ipsa laboriosam,
+                nostrum nulla placeat, quae tenetur vero, vitae! Blanditiis
+                eveniet facilis fuga incidunt quo, sit.
+            </p>
+        </div>
+        <img src="multimedia/Placeholders/web-development.jpg" alt="business-img"
+             class="col-lg-4 col-md-4 col-sm-8">
+    </div>
+</section>
+<hr>
 
 <footer class="col-lg-12 col-md-12 col-sm-12 container-fluid" id="footer">
 
     <div class="row">
-        <div  class=" col-lg-1 align-self-center">
-            <img class="imgFooter" src="multimedia/General/logo.png" alt="logo footer" style="height: 90px; width: 100px">
+        <div class=" col-lg-1 align-self-center">
+            <img class="imgFooter" src="multimedia/General/logo.png" alt="logo footer"
+                 style="height: 90px; width: 100px">
         </div>
         <address class="col-lg-8 align-self-center">
-            <p>PABLO NARZARENO ARANCIBIA</p>
+            <p>PABLO NAZARENO ARANCIBIA</p>
             <p>Tel: +54 261 5458448</p>
             <p>parancibia.017@gmail.com</p>
             <p>Adolfo Calle 2770 - Mendoza - Argentina</p>
@@ -98,11 +183,9 @@
                          class="img-fluid">
                 </a>
             </li>
-
         </ul>
     </div>
 </footer>
-
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

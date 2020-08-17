@@ -6,11 +6,9 @@ $grayBody: #333333;
 $grayBodyVariation: #666666;
 $fontColor: #4D4D4D;
 $tittleColor: #436D89;
+$cardColorGames: #B4D0E9;
+$cardColorBusiness: #E4BD96;
 
-////FONT
-//$fontBody{
-////font-style: ;
-//}
 
 
 /*---------------------General----------------------------------*/
@@ -31,9 +29,10 @@ html {
   color: $fontColor;
   font-size: 15px;
   letter-spacing: 5px;
-
-
+  padding: 0;
 }
+
+
 /*---------------------General----------------------------------*/
 
 
@@ -127,7 +126,7 @@ footer{
   color: $fontColor;
   margin-left: 10px;
   margin-bottom: 0;
-  background-image: linear-gradient(to bottom, white, $tittleColor);
+  background-image: linear-gradient(to bottom, $backgroundColor, $tittleColor);
   
   p{
     margin-bottom: 3px;
@@ -182,6 +181,83 @@ footer{
 .variationColor{
   background-image: linear-gradient(to top, $grayBody, black);
 }
+
+//------------------SERVICES------------------------
+
+.services-title{
+  font-family: 'DIN-BlackItalic', sans-serif;  
+  //font-weight: bolder;  
+  color: $tittleColor;
+}
+
+.nav-services{
+  //height: 80vh;
+  margin: 20px;
+  padding: 20px;
+  
+  
+  .card {     
+    
+    .card-header{
+      img{
+        height: 20px;
+        width: 20px;
+      }
+    }
+    
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .card-img-top {
+      //background-color: $cardColor;
+      padding: 20px;
+    }
+    
+    a{
+      text-decoration: none;
+      color: $fontColor;      
+    }   
+  }
+  
+  .card:hover{    
+    transform: scale(1.1, 1.1);
+  }
+  
   
 
+  .index-img{
+    background-image: url("multimedia/General/asa-6750.jpg");
+  }
+  
+}
+
+.business{
+  font-size: 2rem;
+  background-color: $cardColorBusiness;
+  padding: 6rem;  
+  h2{
+    font-size: 5rem;
+  }
+}
+
+.games{
+  
+  font-size: 2rem;
+  background-color: $cardColorGames;
+  padding: 6rem;
+  h2{
+    font-size: 5rem;
+  }
+}
+
+.webpage{
+  font-size: 2rem;
+  padding: 6rem;
+  h2{
+    font-size: 5rem;
+  }
+}
 
