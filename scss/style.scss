@@ -42,7 +42,8 @@ html {
 
 header{
   height: 100%;
-  display: inline;
+  display: flex;
+  vertical-align: center;
   align-content: stretch;
   justify-content: space-evenly;
 }
@@ -115,6 +116,13 @@ header{
   }
 }
 
+.descriptionIndex{
+  width: 80%; 
+  transform: translateX(30px);
+  font-size: 2rem;
+  color: $cardColorGames;
+}
+
 /*--------------------   INDEX  ---------------------------------*/
 
 
@@ -184,7 +192,7 @@ footer{
 
 //------------------SERVICES------------------------
 
-.services-title{
+.title_font{
   font-family: 'DIN-BlackItalic', sans-serif;  
   //font-weight: bolder;  
   color: $tittleColor;

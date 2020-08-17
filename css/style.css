@@ -24,7 +24,8 @@ html {
 /*----------------------Header-----------------------------------*/
 header {
   height: 100%;
-  display: inline;
+  display: flex;
+  vertical-align: center;
   align-content: stretch;
   justify-content: space-evenly; }
 
@@ -77,6 +78,12 @@ header {
     transform: scale(0.1);
     transform-origin: 0 0; } }
 
+.descriptionIndex {
+  width: 80%;
+  transform: translateX(30px);
+  font-size: 2rem;
+  color: #B4D0E9; }
+
 /*--------------------   INDEX  ---------------------------------*/
 /*---------------------Footer-----------------------*/
 /*---------------------Address------------------*/
@@ -120,7 +127,7 @@ footer {
 .variationColor {
   background-image: linear-gradient(to top, #333333, black); }
 
-.services-title {
+.title_font {
   font-family: 'DIN-BlackItalic', sans-serif;
   color: #436D89; }
 
