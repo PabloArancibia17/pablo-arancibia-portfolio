@@ -2,8 +2,6 @@
 /*---------------------General----------------------------------*/
 /* etiqueta raíz */
 html {
-  height: 100%;
-  width: 100%;
   font-size: 62.5%; }
 
 * {
@@ -17,17 +15,25 @@ html {
   color: #4D4D4D;
   font-size: 15px;
   letter-spacing: 5px;
-  padding: 0; }
+  margin: 0; }
 
 /*---------------------General----------------------------------*/
 /*-----------      INDEX          -----------------------*/
 /*----------------------Header-----------------------------------*/
-header {
-  height: 100%;
-  display: flex;
-  vertical-align: center;
-  align-content: stretch;
-  justify-content: space-evenly; }
+.header {
+  margin: 0;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: black;
+  padding-top: 2rem;
+  padding-left: 20px;
+  padding-right: 2rem;
+  padding-bottom: 5px;
+  font-size: 1.5rem; }
+  .header ul {
+    padding: 2rem; }
+    .header ul li {
+      padding-top: 1.5rem; }
 
 .header__title {
   color: #4D4D4D; }
@@ -124,8 +130,143 @@ footer {
 
 /*------------------------     Me     ---------------------------*/
 /*------------------------     FORM     ---------------------------*/
-.variationColor {
-  background-image: linear-gradient(to top, #333333, black); }
+.contact {
+  padding-bottom: 0; }
+
+.contact .info {
+  padding: 5px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); }
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out; }
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18; }
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c; }
+
+.contact .info .email p {
+  padding-top: 5px; }
+
+.contact .info .social-links {
+  padding-left: 60px; }
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px; }
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff; }
+
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff; }
+
+.contact .php-email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); }
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px; }
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px; }
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600; }
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px; }
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600; }
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px; }
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite; }
+
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px; }
+
+.contact .php-email-form input {
+  height: 44px; }
+
+.contact .php-email-form textarea {
+  padding: 10px 12px; }
+
+.contact .php-email-form button[type="submit"] {
+  background: #436D89;
+  border: 0;
+  padding: 10px 24px;
+  color: white;
+  transition: 0.4s;
+  border-radius: 4px; }
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #37b3ed; }
 
 .title_font {
   font-family: 'DIN-BlackItalic', sans-serif;
@@ -170,3 +311,28 @@ footer {
   padding: 6rem; }
   .webpage h2 {
     font-size: 5rem; }
+
+.skills {
+  height: 100%;
+  padding-top: 2rem; }
+  .skills .progress {
+    height: 60px;
+    display: block;
+    background: none; }
+    .skills .progress .skill {
+      padding: 10px 0;
+      margin: 0 0 6px 0;
+      text-transform: uppercase;
+      display: block;
+      font-weight: 600;
+      color: #050d18; }
+      .skills .progress .skill .val {
+        float: right;
+        font-style: normal; }
+  .skills .progress-bar-wrap {
+    background: #dce8f8; }
+  .skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: .9s;
+    background-color: #436D89; }

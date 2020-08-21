@@ -12,179 +12,191 @@
           crossorigin="anonymous">
 </head>
 
-<body class="body">
+<body class="body row">
 
-<header class="col-lg-12 col-md-12 col-sm-12 container-fluid" style="padding: 0">
+<div class="col-lg-3 col-md-12 col-sm-12 header container d-flex flex-column align-items-between">
+    <ul class="nav align-items flex-column">
 
-    <nav class="row">
-        <ul class="col-lg-12 col-md-12 col-sm-12 nav nav-pills justify-content-end">
-            <li class="nav-item">
-                <a class="menu--textColor nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu--textColor nav-link" href="me.html">Me</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="menu--textColor nav-link dropdown-toggle" 
-                   data-toggle="dropdown" href="skills.html" role="button"
-                   aria-haspopup="true" aria-expanded="false">Skills</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="skills.html">Videogames</a>
-                    <a class="dropdown-item" href="skills.html">Web</a>
-                    <a class="dropdown-item" href="skills.html">Mobile</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="menu--textColor nav-link" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="menu--textColor nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </nav>
+        <!--------------   LOGO NAV---------------------------------------->
+        <li class="nav-item d-flex justify-content-center">
+            <img src="multimedia/General/Pablito%20pixel-10.png" alt="logo-img" class="img-fluid" style="height: 100px; width: 120px;">
+        </li>
+        <li class="nav-item"  style="padding-top: 0;">
+            <img src="multimedia/General/Pablito%20pixel-09.png" alt="logo-font" class="img-fluid">
+        </li>
 
-    <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="row">
-            <a href="index.html">
-                <img alt="logo" src="multimedia/General/logo-isotipo.png"
-                     class="col-lg-6 col-md-8 col-sm-12 titleAnimation img-fluid">
+        <!-------------------SOCIAL MEDIA NAV--------------------->
+
+        <li class="d-flex justify-content-around">
+            <a href="https://www.facebook.com/pablito11">
+                <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
             </a>
-        </div>
-    </div>
-</header>
+            <a href="https://www.instagram.com/yonoclaveunclavito/">
+                <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
+                <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+            <a href="https://twitter.com/PabloArancibia1">
+                <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li><br>
 
 
-<div class="container">
-<!--Section: Contact v.2-->
-<section class="col-lg-12 col-md-12 col-sm-12 container">
+        <!---------------------------- HEADER NAV---------------------------->
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact me!</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact directly. I will come back to you within
-        a matter of hours to help you.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form><br>
-
-            <div class="text-center text-md-left">
-                <a type="button" class="btn btn-primary btn-lg" style="color: white" onclick="document.getElementById('contact-form').submit();">Send</a>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="me.html">Me</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="menu--textColor nav-link dropdown-toggle"
+               data-toggle="dropdown" href="skills.html" role="button"
+               aria-haspopup="true" aria-expanded="false">Skills</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="skills.html">Videogames</a>
+                <a class="dropdown-item" href="skills.html">Web</a>
+                <a class="dropdown-item" href="skills.html">Mobile</a>
             </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="contact.html">Contact</a>
+        </li>
+    </ul>
 
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <img src="multimedia/General/asa-6710.jpg" alt="image of me" style="height: 100%; width:100%">
-        </div>
-        <!--Grid column-->
-
-    </div>
-
-</section><hr>
+    <address class="mt-auto container d-flex flex-column align-items-center" style="font-size: 1rem; line-height: normal; color: white">
+        <p>© Copyright</p>
+        <p>PABLO NARZARENO ARANCIBIA</p>
+    </address>
 </div>
-<!--Section: Contact v.2-->
 
 
-<footer class="col-lg-12 col-md-12 col-sm-12 container-fluid" id="footer">
+<section class="contact col-lg-9 col-md-12 col-sm-12 d-flex align-items-center">
+    <div class="container">
 
-    <div class="row">
-        <div  class=" col-lg-1 align-self-center">
-            <img class="imgFooter" src="multimedia/General/logo.png" alt="logo footer" style="height: 90px; width: 100px">
+<!--        <div class="section-title">-->
+<!--            <h2>Contact</h2>-->
+<!--            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>-->
+<!--        </div>-->
+
+        <div class="row" data-aos="fade-in">
+
+            <div class="col-lg-5 d-flex align-items-stretch">
+                <div class="info">
+                    <div class="address">
+                        <i class="icofont-google-map"></i>
+                        <h4>Location:</h4>
+                        <p>Adolfo Calle 2770, Mendoza, Argentina</p>
+                    </div>
+
+                    <div class="email">
+                        <i class="icofont-envelope"></i>
+                        <h4>Email:</h4>
+                        <p>parancibia.017@gmail.com</p>
+                    </div>
+
+                    <div class="phone">
+                        <i class="icofont-phone"></i>
+                        <h4>Call:</h4>
+                        <p>+54 261 5458448</p>
+                    </div>
+
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.829939710592!2d-68.80790038496708!3d-32.90266428093434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0eb3f07ca7bd%3A0x93a99ac4abaea2b0!2sAdolfo%20Calle%202770%2C%20M5519BTD%20Dorrego%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1597932290144!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    
+                </div>
+
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validate"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="name">Your Email</label>
+                            <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Subject</label>
+                        <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Message</label>
+                        <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+
         </div>
-        <address class="col-lg-8 align-self-center">
-            <p>PABLO NARZARENO ARANCIBIA</p>
-            <p>Tel: +54 261 5458448</p>
-            <p>parancibia.017@gmail.com</p>
-            <p>Adolfo Calle 2770 - Mendoza - Argentina</p>
-        </address>
 
-        <ul class="col-lg-3 nav nav-pills nav-fill align-self-center">
-
-            <li class="nav-item">
-                <a href="https://www.facebook.com/pablito11">
-                    <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"
-                         class="img-fluid">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.instagram.com/yonoclaveunclavito/">
-                    <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"
-                         class="img-fluid">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
-                    <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"
-                         class="img-fluid">
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="https://twitter.com/PabloArancibia1">
-                    <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"
-                         class="img-fluid">
-                </a>
-            </li>
-
-        </ul>
     </div>
-</footer>
+</section><!-- End Contact Section -->
+
+<!--<footer class="col-lg-12 col-md-12 col-sm-12 container-fluid" id="footer">-->
+
+<!--    <div class="row">-->
+<!--        <div  class=" col-lg-1 align-self-center">-->
+<!--            <img class="imgFooter" src="multimedia/General/logo.png" alt="logo footer" style="height: 90px; width: 100px">-->
+<!--        </div>-->
+<!--        <address class="col-lg-8 align-self-center">-->
+<!--            <p>PABLO NARZARENO ARANCIBIA</p>-->
+<!--            <p>Tel: +54 261 5458448</p>-->
+<!--            <p>parancibia.017@gmail.com</p>-->
+<!--            <p>Adolfo Calle 2770 - Mendoza - Argentina</p>-->
+<!--        </address>-->
+
+<!--        <ul class="col-lg-3 nav nav-pills nav-fill align-self-center">-->
+
+<!--            <li class="nav-item">-->
+<!--                <a href="https://www.facebook.com/pablito11">-->
+<!--                    <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"-->
+<!--                         class="img-fluid">-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a href="https://www.instagram.com/yonoclaveunclavito/">-->
+<!--                    <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"-->
+<!--                         class="img-fluid">-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">-->
+<!--                    <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"-->
+<!--                         class="img-fluid">-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--                <a href="https://twitter.com/PabloArancibia1">-->
+<!--                    <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"-->
+<!--                         class="img-fluid">-->
+<!--                </a>-->
+<!--            </li>-->
+
+<!--        </ul>-->
+<!--    </div>-->
+<!--</footer>-->
 
 
 
