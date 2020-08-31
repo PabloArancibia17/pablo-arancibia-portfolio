@@ -1,0 +1,116 @@
+<div class="col-lg-12 col-md-12 col-sm-12 mediaHeader container-fluid">
+
+    <nav class="navbar navbar-expand-lg navbar-dark navHeader">
+        <a class="navbar-brand title_font" href="index.html" style="color: #436D89; font-size: large">
+            <img src="multimedia/General/logo.png" alt="logo" style="height: 50px; width: 50px"> 
+            PABLO ARANCIBIA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="me.html">Me</a>
+                <a class="nav-link" href="skills.html">Skills</a>
+                <a class="nav-link" href="services.html">Services</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <ul class="col-lg-3 nav nav-pills nav-fill align-self-center">
+
+        <li class="nav-item">
+            <a href="https://www.facebook.com/pablito11">
+                <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://www.instagram.com/yonoclaveunclavito/">
+                <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
+                <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="https://twitter.com/PabloArancibia1">
+                <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<div class="col-lg-3 col-md-12 col-sm-12 container d-flex flex-column align-items-between">
+    <ul class="header nav align-items flex-column">
+
+        <!--------------   LOGO NAV---------------------------------------->
+        <li class="nav-item d-flex justify-content-center">
+            <img src="multimedia/General/Pablito%20pixel-10.png" alt="logo-img" class="img-responsive" style="height: 100px; width: 120px;">
+        </li>
+        <li class="nav-item"  style="padding-top: 0;">
+            <img src="multimedia/General/Pablito%20pixel-09.png" alt="logo-font" class="imgHeader img-responsive">
+        </li>
+
+        <!-------------------SOCIAL MEDIA NAV--------------------->
+
+        <li class="d-flex justify-content-around">
+            <a href="https://www.facebook.com/pablito11">
+                <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+            <a href="https://www.instagram.com/yonoclaveunclavito/">
+                <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
+                <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+            <a href="https://twitter.com/PabloArancibia1">
+                <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"
+                     class="img-fluid">
+            </a>
+        </li><br>
+
+
+        <!---------------------------- HEADER NAV---------------------------->
+
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="me.html">Me</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="menu--textColor nav-link dropdown-toggle"
+               data-toggle="dropdown" href="skills.html" role="button"
+               aria-haspopup="true" aria-expanded="false">Skills</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="skills.html">Videogames</a>
+                <a class="dropdown-item" href="skills.html">Web</a>
+                <a class="dropdown-item" href="skills.html">Mobile</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+            <a class="menu--textColor nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="mt-auto container d-flex flex-column align-items-center" style="font-size: 0.9rem; line-height: normal; color: white">
+            <p>© Copyright</p>
+            <p>PABLO NARZARENO ARANCIBIA</p>
+        </li>
+    </ul>
+
+
+</div>

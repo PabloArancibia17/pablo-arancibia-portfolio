@@ -11,81 +11,79 @@
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
           crossorigin="anonymous">
 </head>
-<body class="body row">
+<body class="body backgroundImage">
 
-<div class="col-lg-3 col-md-12 col-sm-12 header container d-flex flex-column align-items-between">
-    <ul class="nav align-items flex-column">
+<nav class="header navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">
+        <img src="multimedia/General/logo-back.png" alt="logo" class="img-fluid imgHeader">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!--------------   LOGO NAV---------------------------------------->
-        <li class="nav-item d-flex justify-content-center">
-            <img src="multimedia/General/Pablito%20pixel-10.png" alt="logo-img" class="img-fluid" style="height: 100px; width: 120px;">
-        </li>
-        <li class="nav-item"  style="padding-top: 0;">
-            <img src="multimedia/General/Pablito%20pixel-09.png" alt="logo-font" class="img-fluid">
-        </li>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="menu--active" href="me.html">Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu--textColor" href="skills.html">Skills</a>
+            </li>
+            <li class="nav-item active">
+                <a class="menu--textColor" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="menu--textColor" href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-md-auto">
+            <li>
+                <a href="https://www.facebook.com/pablito11">
+                    <img alt="face" src="multimedia/SocialMedia/facebook.png"
+                         class="imgMedia">
+                </a>
+                <a href="https://www.instagram.com/yonoclaveunclavito/">
+                    <img alt="Ig" src="multimedia/SocialMedia/ig.png"
+                         class="imgMedia">
+                </a>
+                <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
+                    <img alt="linkedin" src="multimedia/SocialMedia/ld.png"
+                         class="imgMedia">
+                </a>
+                <a href="https://twitter.com/PabloArancibia1">
+                    <img alt="twitter" src="multimedia/SocialMedia/tw.png"
+                         class="imgMedia">
+                </a>
+            </li>
+        </ul>
+    </div>
 
-        <!-------------------SOCIAL MEDIA NAV--------------------->
+</nav>
 
-        <li class="d-flex justify-content-around">
-            <a href="https://www.facebook.com/pablito11">
-                <img alt="face" src="multimedia/SocialMedia/facebook.png" style="width: 30px; height: 30px"
-                     class="img-fluid">
-            </a>
-            <a href="https://www.instagram.com/yonoclaveunclavito/">
-                <img alt="Ig" src="multimedia/SocialMedia/ig.png" style="width: 30px; height: 30px"
-                     class="img-fluid">
-            </a>
-            <a href="https://www.linkedin.com/in/pablo-arancibia-038360161/">
-                <img alt="linkedin" src="multimedia/SocialMedia/ld.png" style="width: 30px; height: 30px"
-                     class="img-fluid">
-            </a>
-            <a href="https://twitter.com/PabloArancibia1">
-                <img alt="twitter" src="multimedia/SocialMedia/tw.png" style="width: 30px; height: 30px"
-                     class="img-fluid">
-            </a>
-        </li><br>
-
-
-        <!---------------------------- HEADER NAV---------------------------->
-
-        <li class="nav-item">
-            <a class="menu--textColor nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="menu--textColor nav-link" href="me.html">Me</a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="menu--textColor nav-link dropdown-toggle"
-               data-toggle="dropdown" href="skills.html" role="button"
-               aria-haspopup="true" aria-expanded="false">Skills</a>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="skills.html">Videogames</a>
-                <a class="dropdown-item" href="skills.html">Web</a>
-                <a class="dropdown-item" href="skills.html">Mobile</a>
-            </div>
-        </li>
-        <li class="nav-item">
-            <a class="menu--textColor nav-link" href="services.html">Services</a>
-        </li>
-        <li class="nav-item">
-            <a class="menu--textColor nav-link" href="contact.html">Contact</a>
-        </li>
-    </ul>
-
-    <address class="mt-auto container d-flex flex-column align-items-center" style="font-size: 1rem; line-height: normal; color: white">
-        <p>© Copyright</p>
-        <p>PABLO NARZARENO ARANCIBIA</p>
-    </address>
-</div>
-
-
-
-<article class="col-lg-9 col-md-12 col-sm-12 article container" >
+<article class="container article">
     <div class="row">
     
-        <section class="col-lg-7 col-md-6 col-sm-6 article__info">
-            <h2 class="title_font" style="font-size: 3rem">INTRODUCING TO MYSELF</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab commodi cumque, delectus dolor eius eum eveniet harum, illo inventore ipsa minus mollitia numquam, omnis quia quisquam rem soluta tempora voluptates?</p>
+        <section class="col-lg-7 col-md-6 col-sm-6 article__info container">
+            <h1 class="title_font" style="font-size: 4rem">ABOUT ME</h1><br>
+            <p class="body_font text-left font-weight-normal">         
+                SOY PABLO ARANCIBIA, BUSINESS, GAME & WEB DEVELOPER CON EXPERIENCIA EN 
+                PROYECTOS RELACIONADOS AL DESARROLLO DE VIDEOJUEGOS, LIDERAZGO EN PROYECTOS DE INNOVACION CON FOCO
+                EN NUEVAS HERRAMIENTAS DE MARKETING Y APASIONADO POR EL NETWORKING.
+            </p><br>
+            <p class="body_font text-left">
+                CONSIDERO QUE EL PRINCIPAL MOTOR DE MIS METAS SON LA PASIÓN POR EMPRENDER,
+                LOS NUEVOS DESAFIOS, LA RED DE CONTACTOS QUE GENERAN LOS NUEVOS TRABAJOS 
+                Y EL CONSTANTE APRENDIZAJE QUE DEJA CADA PROYECTO.
+            </p><br>
+            <p class="body_font text-left">
+                A LO LARGO DE MI CARRERA HE CONSEGUIDO METAS DE LAS CUALES ME SIENTO INCREIBLEMENTE ORGULLOSO
+                TALES COMO HABER PERTENECIDO A "KRAKEN SEA STUDIOS" UN EMPRENDIMIENTO QUE TUVO COMO
+                META LA INSERCIÓN DE VIDEOJUEGOS COMO HERRAMIENTA DE INNOVACION EN MARKETING. POSTERIORMENTE PARTICIPÉ COMO PROGRAMADOR 
+                EN "SOUTHWIND GAMES" UN ESTUDIO DE DESARROLLO DE VIDEOJUEGOS DE EXPORTACION. 
+                EN EL ULTIMO AÑO OPTÉ POR TOMAR UN NUEVO CAMINO, ENFOCANDOME EN TRABAJOS FREELANCE
+                BUSCANDO DEJAR UNA MARCA TANTO EN LOS PRODUCTOS, COMO EN LA MEMORIA DE CADA CLIENTE.
+            </p><br>
+            
         </section>
     
         <section class="col-lg-5 col-md-6 col-sm-6 article__picture">
@@ -97,15 +95,15 @@
                 </ol>
                 <div class="carousel-inner article__picture__img">
                     <div class="carousel-item active">
-                        <img src="multimedia/General/asa-6750.jpg" class="d-block w-100 " alt="...">
+                        <img src="multimedia/General/front-opt.jpg" class="d-block w-100 article__picture rounded" alt="frontal photo">
                         <div class="carousel-caption d-none d-md-block"></div>
                     </div>
                     <div class="carousel-item">
-                        <img src="multimedia/General/asa-6710.jpg" class="d-block w-100" alt="...">
+                        <img src="multimedia/General/hat-profile-opt.jpg" class="d-block w-100 article__picture rounded" alt="photo with hat">
                         <div class="carousel-caption d-none d-md-block"></div>
                     </div>
                     <div class="carousel-item">
-                        <img src="multimedia/General/asa-6705.jpg" class="d-block w-100" alt="...">
+                        <img src="multimedia/General/cristal-opt.jpg" class="d-block w-100 article__picture rounded" alt="photo with crystal ball">
                         <div class="carousel-caption d-none d-md-block">
                         </div>
                     </div>
@@ -120,12 +118,56 @@
                 </a>
             </div>
         </section>
-    </div>
+    </div>            
     
-</article><hr>
+</article>
 
+<section class="container" style="padding: 2rem">
+    <div class="d-flex justify-content-center">
+        <button type="button" class="myButtonSize" data-toggle="modal" data-target="#vipModal" style="background-color: darkred; box-shadow: 0 0 40px red">
+            VIP INFO
+        </button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="vipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row">
 
+                                <p class="col-8 font-weight-bolder body_font text-left">
+                                    CREO FIRMEMENTE QUE CADA PERSONA DEBE HACER LO QUE A UNO LE HACE FELIZ =).....EN ESTO
+                                    SE ENCUENTRA LA CLAVE DEL EXITO. PERO TAMBIEN ES UNA REALIDAD QUE ALGUNAS VECES ESTE CAMINO
+                                    PUEDE SER FRUSTRANTE AL IGNORAR CIERTOS ASPECTOS IMPORTANTES PARA LLEGAR AL OBJETIVO.
+                                    ES POR ESTO QUE TE PROPONGO QUE HABLEMOS DE TU PRODUCTO Y BUSQUEMOS LA FORMA DE LLEGAR
+                                    DE LA FORMA MÁS RAPIDA Y EFICIENTE A TUS METAS.<br><br>
+                                    <a href="contact.html" class="tooltip-test" title="Tooltip">CONTACTAME!</a>
+                                    TE ESTOY ESPERANDO PARA TRABAJAR JUNTOS!!!
+                                </p>
+
+                                <img src="multimedia/General/avatar.png" alt="logo" class="col-4 img-fluid" style="transform: rotateY(180deg)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><br><br><br>
+<footer>
+    <div class="d-flex flex-column align-items-center">
+        <p>© Copyright</p>
+        <p>Designed by PABLO ARANCIBIA</p>
+        <p>Powered by Joe</p>
+    </div>
+
+</footer>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
