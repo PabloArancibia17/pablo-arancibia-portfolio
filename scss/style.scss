@@ -38,6 +38,10 @@ html {
   @media(max-width: 992px) {
     font-size: 8rem;
   }
+  
+  @media (max-width: 600px) {
+    font-size: 4rem;
+  }
   }
   
 
@@ -480,7 +484,7 @@ footer{
       font-size: medium;
       color: #050d18;
       @media (max-width: 600px) {
-        font-size: smaller;
+        font-size: 16px;
       }
 
       .val {
