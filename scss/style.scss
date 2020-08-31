@@ -329,7 +329,6 @@ footer{
 
   //------------------SERVICES------------------------
 .services {
-
   padding-top: 6rem;
   padding-right: 0;
   padding-left: 0;
@@ -481,7 +480,7 @@ footer{
       font-size: medium;
       color: #050d18;
       @media (max-width: 600px) {
-        font-size: small;
+        font-size: smaller;
       }
 
       .val {
