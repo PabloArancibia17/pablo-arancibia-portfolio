@@ -142,10 +142,6 @@ html {
     .imgIndex {
       height: 550px;
       width: 400px; } }
-  @media (max-width: 992px) {
-    .imgIndex {
-      height: 100%;
-      width: 100%; } }
 
 @keyframes animationIndex {
   0% {

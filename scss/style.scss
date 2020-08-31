@@ -73,6 +73,7 @@ html {
 
 
 .header{
+  
   .imgHeader{    
     height: 80px;
     width: 90px;
@@ -209,14 +210,7 @@ html {
   @media (max-width: 992px) {
     height: 550px;
     width: 400px;
-  }
-  
-  
-  @media (max-width: 992px) {
-    height: 100%;
-    width: 100%;
-    //visibility: hidden;
-  }
+  }  
 }
 
 @keyframes animationIndex {
