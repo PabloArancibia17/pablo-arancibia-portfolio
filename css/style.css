@@ -229,8 +229,10 @@ footer {
   vertical-align: center; }
 
 .article__info {
-  font-size: 15px;
-  box-shadow: 0 0 24px 0 #436D89; }
+  font-size: 15px; }
+  @media (min-width: 600px) {
+    .article__info {
+      box-shadow: 0 0 24px 0 #436D89; } }
 
 .services {
   padding-top: 6rem;
