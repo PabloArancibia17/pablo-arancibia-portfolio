@@ -22,7 +22,7 @@ html {
   color: #436D89;
   text-shadow: 0 0 20px #436D89;
   font-size: 6rem; }
-  @media (max-width: 992px) {
+  @media (min-width: 600px) and (max-width: 992px) {
     .title_font {
       font-size: 8rem; } }
   @media (max-width: 600px) {
