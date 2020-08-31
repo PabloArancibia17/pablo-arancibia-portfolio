@@ -76,6 +76,11 @@ html {
   .imgHeader{    
     height: 80px;
     width: 90px;
+    
+    @media (max-width: 992px) {
+      height: 95px;
+      width: 100px;
+    }
   }
   
   .imgHeader:hover{
@@ -200,6 +205,12 @@ html {
     height: 550px;
     width: 500px;
   }
+
+  @media (max-width: 992px) {
+    height: 550px;
+    width: 400px;
+  }
+  
   
   @media (max-width: 992px) {
     height: 100%;
