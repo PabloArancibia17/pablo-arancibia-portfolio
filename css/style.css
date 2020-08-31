@@ -342,7 +342,7 @@ footer {
       color: #050d18; }
       @media (max-width: 600px) {
         .skills .progress .skill {
-          font-size: 16px; } }
+          font-size: smaller; } }
       .skills .progress .skill .val {
         float: right;
         font-style: normal; }
