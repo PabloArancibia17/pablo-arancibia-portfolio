@@ -27,7 +27,7 @@ html {
   color: #4D4D4D; }
 
 .backgroundIndexImage {
-  background: url("../multimedia/General/background-pixel2.jpg") no-repeat; }
+  background: url("../multimedia/General/index/background-pixel2.jpg") no-repeat; }
   @media (min-width: 992px) {
     .backgroundIndexImage {
       background-size: 1920px 1080px; } }
@@ -129,7 +129,7 @@ html {
 .imgIndex {
   transform: translateX(-20px) rotateY(180deg);
   animation: animationIndex 20s;
-  background: url("../multimedia/assets/guiño/Secuencia-21.png") no-repeat;
+  background: url("../multimedia/General/index/Secuencia-21.png") no-repeat;
   animation-play-state: running; }
   @media (min-width: 992px) {
     .imgIndex {
@@ -142,16 +142,16 @@ html {
 
 @keyframes animationIndex {
   0% {
-    background: url("../multimedia/General/caminando.gif") no-repeat;
+    background: url("../multimedia/General/index/caminando.gif") no-repeat;
     transform: translateX(180%) rotateY(180deg); }
   55% {
-    background: url("../multimedia/General/caminando.gif") no-repeat;
+    background: url("../multimedia/General/index/caminando.gif") no-repeat;
     transform: translateX(-20px) rotateY(180deg); }
   55.1% {
-    background: url("../multimedia/General/saludo 1.gif") no-repeat;
+    background: url("../multimedia/General/index/saludo 1.gif") no-repeat;
     transform: translateX(-20px) rotateY(180deg); }
   100% {
-    background: url("../multimedia/assets/saludando/Secuencia-08.png") no-repeat;
+    background: url("../multimedia/General/index/Secuencia-08.png") no-repeat;
     transform: translateX(-20px) rotateY(180deg); } }
 
 /*--------------------   INDEX  ---------------------------------*/
@@ -293,40 +293,40 @@ footer {
 @keyframes contactAvatar {
   0% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/saludando/Secuencia-08.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-08.png") no-repeat; }
   89% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-19.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-19.png") no-repeat; }
   90% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-20.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-20.png") no-repeat; }
   91% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-21.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-21.png") no-repeat; }
   92% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-22.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-22.png") no-repeat; }
   93% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-23.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-23.png") no-repeat; }
   94% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-24.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-24.png") no-repeat; }
   95% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-25.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-25.png") no-repeat; }
   96% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-26.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-26.png") no-repeat; }
   97% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-27.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-27.png") no-repeat; }
   98% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-28.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-28.png") no-repeat; }
   100% {
     transform: rotateY(180deg);
-    background: url("../multimedia/assets/bostezo/Secuencia-29.png") no-repeat; } }
+    background: url("../multimedia/General/contact/frames/Secuencia-29.png") no-repeat; } }
   .contact .info {
     padding: 5px;
     background: transparent;
