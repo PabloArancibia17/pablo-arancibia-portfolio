@@ -10,7 +10,7 @@ $cardColorGames: #b4d0e9;
 $cardColorBusiness: #E4BD96;
 
 
-/*---------------------General----------------------------------*/
+/*---------------------GENERAL----------------------------------*/
 
 /* etiqueta raíz */
 html {  
@@ -41,17 +41,6 @@ html {
   color: #4D4D4D;
 }
 
-.backgroundIndexImage{   
-  background: url('../multimedia/General/index/background-pixel2.jpg') no-repeat;
-  
-  @media (min-width: 992px) {
-    background-size: 1920px 1080px;
-  }
-  
-  @media (min-width:0px) and (max-width: 992px) {
-    background-size: cover;
-  }
-}
 
 .backgroundImage{  
   padding: 0; 
@@ -71,16 +60,16 @@ html {
 
 
 
-/*---------------------General----------------------------------*/
+/*---------------------GENERAL----------------------------------*/
 
 
-/*----------------------Header-----------------------------------*/
+/*----------------------HEADER-----------------------------------*/
 
 
 .header{
   .imgHeader{    
-    height: 90px;
-    width: 100px;
+    height: 80px;
+    width: 90px;
   }
   
   .imgHeader:hover{
@@ -99,8 +88,8 @@ html {
     padding: 1px;
 
     @media (min-width: 992px) {
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
     }      
     
     @media (max-width: 992px) {
@@ -137,7 +126,7 @@ html {
 
 
 
-/*------------------------MENU--------------------------*/
+/*------------------------Menu--------------------------*/
 
 .menu--textColor{
   display: block;
@@ -184,14 +173,14 @@ html {
   color: $tittleColor;
 }
 
-  /*------------------------MENU--------------------------*/
+  /*------------------------Menu--------------------------*/
 
-  /*----------------------Header-----------------------------------*/
+  /*----------------------HEADER-----------------------------------*/
 
 /*--------------------   INDEX  ---------------------------------*/
 .imgIndex {  
-  transform: translateX(-20px) rotateY(180deg) ;  
-  animation: animationIndex 20s;
+  transform: rotateY(180deg) ;  
+  animation: animationIndex 38s;
   background: url("../multimedia/General/index/Secuencia-21.png") no-repeat;
   animation-play-state: running;
 
@@ -202,7 +191,8 @@ html {
   
   @media (max-width: 992px) {
     height: 100%;
-    width: 100%;    
+    width: 100%;
+    //visibility: hidden;
   }
 }
 
@@ -210,29 +200,75 @@ html {
 
   0% {
     background: url("../multimedia/General/index/caminando.gif") no-repeat;
-    transform: translateX(180%) rotateY(180deg);
+    transform:rotateY(180deg) translateX(-150%);
+    
   }
-  55% {
+  50% {
     background: url("../multimedia/General/index/caminando.gif") no-repeat;
-    transform: translateX(-20px) rotateY(180deg);
-
+    transform:rotateY(180deg) translateX(0%);
+    
   }
 
-  55.1% {
+  50.1% {
     background: url("../multimedia/General/index/saludo 1.gif") no-repeat;
-    transform: translateX(-20px) rotateY(180deg);
+    transform:rotateY(180deg);
   }
 
   100% {
     background: url("../multimedia/General/index/Secuencia-08.png") no-repeat;
-    transform: translateX(-20px) rotateY(180deg);
+    transform:rotateY(180deg);
   }
-} 
+}
 
+.img--logo{
+  animation: logo 21s; 
+  
+  
+  @keyframes logo {
+    from {transform: translateX(-100%)}
+    to{transform: translateX(0)}    
+  }
+}
+
+.welcomeSize{
+  @media (min-width: 1400px) {
+    height: 80vh;
+  }
+  
+  @media (max-width: 1400px) {
+    height: 500px;
+  }
+}
+
+.avatarSectionSize{
+  @media (min-width: 1400px) {
+    height: 85vh;
+  }
+
+  @media (max-width: 1400px) {
+    height: 550px;    
+  }
+}
+
+.backgroundIndexImage{
+  background: url('../multimedia/General/index/background-pixel2.jpg') no-repeat;
+  
+  @media (min-width: 1400px) {
+    background-size: 100% 1080px;
+  }
+
+  @media (min-width:992px) and (max-width: 1400px) {
+    background-size: 100% 720px;
+  }
+  
+  @media (max-width: 992px){
+    background-size: cover;
+  }
+}
 /*--------------------   INDEX  ---------------------------------*/
 
 
-  /*---------------------Footer-----------------------*/
+/*---------------------Footer-----------------------*/
  
 footer{
   position: absolute;
@@ -242,7 +278,8 @@ footer{
   width: 100%;  
   font-size: smaller;
   text-decoration: none;
-  color: black;
+  color: $cardColorBusiness;
+  text-shadow: 2px 2px 1px black;
   div{
     p{
       margin: 0;
@@ -252,17 +289,17 @@ footer{
   
 }
 
-  /*---------------------Footer-----------------------*/
+/*---------------------Footer-----------------------*/
 
 
-  /*------------------------     Me     ---------------------------*/
+/*------------------------     ME     ---------------------------*/
 
   .article {
     padding: 2rem;
   }
 
   .article__picture {
-    height: 630px;
+    height: 700px;
     border-image: round;
   }
 
@@ -276,11 +313,13 @@ footer{
 
   .article__info {    
     font-size: 15px;
+    box-shadow: 0 0 24px 0 $tittleColor;
+
   }  
   
 
 
-  /*------------------------     Me     ---------------------------*/
+  /*------------------------     ME     ---------------------------*/
 
 
   //------------------SERVICES------------------------
@@ -344,7 +383,7 @@ footer{
     }
 
     .business {
-      font-size: 3rem;
+      font-size: 2.5rem;
       background-color: $cardColorBusiness;
       padding: 6rem;
 
@@ -357,9 +396,8 @@ footer{
       }
     }
 
-    .games {
-
-      font-size: 3rem;
+    .games {      
+      font-size: 2.5rem;
       background-color: $cardColorGames;
       padding: 6rem;
 
@@ -373,7 +411,7 @@ footer{
     }
 
     .webpage {
-      font-size: 3rem;
+      font-size: 2.5rem;
       padding: 6rem;
 
       h2 {
@@ -385,6 +423,13 @@ footer{
       }
     }
   }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
 
   //---------------SKILLS---------------------
   .skills {
@@ -445,54 +490,66 @@ footer{
 
 
       @keyframes contactAvatar {
-        0%{
+        0%{          
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-08.png") no-repeat;
+          background-position-x: center;
         }
         
         89%{                 
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-19.png") no-repeat;
+          background-position-x: center;
         }
         90% {
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-20.png") no-repeat;
+          background-position-x: center;
         }
         91% {
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-21.png") no-repeat;
+          background-position-x: center;
         }
         92%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-22.png") no-repeat;
+          background-position-x: center;
         }
         93%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-23.png") no-repeat;
+          background-position-x: center;
         }
         94%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-24.png") no-repeat;
+          background-position-x: center;
         }
         95%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-25.png") no-repeat;
+          background-position-x: center;
         }
         96%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-26.png") no-repeat;
+          background-position-x: center;
         }
         97%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-27.png") no-repeat;
+          background-position-x: center;
         }
         98%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-28.png") no-repeat;
+          background-position-x: center;
         }
         100%{
           transform: rotateY(180deg);
           background: url("../multimedia/General/contact/frames/Secuencia-29.png") no-repeat;
+          background-position-x: center;
         }
       }
     }
@@ -551,17 +608,7 @@ footer{
       height: 36px;
       transition: 0.3s;
       margin-right: 10px;
-    }
-
-    .info .social-links a:hover {
-      background: #149ddd;
-      color: #fff;
-    }
-
-    //.info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
-    //  background: #149ddd;
-    //  color: #fff;
-    //}
+    } 
 
     .php-email-form {
       width: 100%;
@@ -572,57 +619,7 @@ footer{
 
     .php-email-form .form-group {
       padding-bottom: 8px;
-    }
-
-    //.php-email-form .validate {
-    //  display: none;
-    //  color: red;
-    //  margin: 0 0 15px 0;
-    //  font-weight: 400;
-    //  font-size: 13px;
-    //}
-    //
-    //.php-email-form .error-message {
-    //  display: none;
-    //  color: #fff;
-    //  background: #ed3c0d;
-    //  text-align: left;
-    //  padding: 15px;
-    //  font-weight: 600;
-    //}
-    //
-    //.php-email-form .error-message br + br {
-    //  margin-top: 25px;
-    //}
-    //
-    //.php-email-form .sent-message {
-    //  display: none;
-    //  color: #fff;
-    //  background: #18d26e;
-    //  text-align: center;
-    //  padding: 15px;
-    //  font-weight: 600;
-    //}
-    //
-    //.php-email-form .loading {
-    //  display: none;
-    //  background: #fff;
-    //  text-align: center;
-    //  padding: 15px;
-    //}
-    //
-    //.php-email-form .loading:before {
-    //  content: "";
-    //  display: inline-block;
-    //  border-radius: 50%;
-    //  width: 24px;
-    //  height: 24px;
-    //  margin: 0 10px -6px 0;
-    //  border: 3px solid #18d26e;
-    //  border-top-color: #eee;
-    //  -webkit-animation: animate-loading 1s linear infinite;
-    //  animation: animate-loading 1s linear infinite;
-    //}
+    }   
 
     .php-email-form input, .contact .php-email-form textarea {
       border-radius: 0;

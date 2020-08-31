@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*---------------------General----------------------------------*/
+/*---------------------GENERAL----------------------------------*/
 /* etiqueta raíz */
 html {
   font-size: 62.5%;
@@ -26,15 +26,6 @@ html {
   font-family: 'D-DIN', sans-serif;
   color: #4D4D4D; }
 
-.backgroundIndexImage {
-  background: url("../multimedia/General/index/background-pixel2.jpg") no-repeat; }
-  @media (min-width: 992px) {
-    .backgroundIndexImage {
-      background-size: 1920px 1080px; } }
-  @media (min-width: 0px) and (max-width: 992px) {
-    .backgroundIndexImage {
-      background-size: cover; } }
-
 .backgroundImage {
   padding: 0;
   background-image: url("../multimedia/General/do-alpha.png");
@@ -49,11 +40,11 @@ html {
   color: white;
   box-shadow: 0 0 10px blue; }
 
-/*---------------------General----------------------------------*/
-/*----------------------Header-----------------------------------*/
+/*---------------------GENERAL----------------------------------*/
+/*----------------------HEADER-----------------------------------*/
 .header .imgHeader {
-  height: 90px;
-  width: 100px; }
+  height: 80px;
+  width: 90px; }
 
 .header .imgHeader:hover {
   transform: scale(1.1); }
@@ -69,8 +60,8 @@ html {
   padding: 1px; }
   @media (min-width: 992px) {
     .header .imgMedia {
-      width: 40px;
-      height: 40px; } }
+      width: 30px;
+      height: 30px; } }
   @media (max-width: 992px) {
     .header .imgMedia {
       width: 50px;
@@ -91,7 +82,7 @@ html {
   100% {
     transform: skewX(0); } }
 
-/*------------------------MENU--------------------------*/
+/*------------------------Menu--------------------------*/
 .menu--textColor {
   display: block;
   padding: .5rem 1rem;
@@ -123,12 +114,12 @@ html {
   text-decoration: none;
   color: #436D89; }
 
-/*------------------------MENU--------------------------*/
-/*----------------------Header-----------------------------------*/
+/*------------------------Menu--------------------------*/
+/*----------------------HEADER-----------------------------------*/
 /*--------------------   INDEX  ---------------------------------*/
 .imgIndex {
-  transform: translateX(-20px) rotateY(180deg);
-  animation: animationIndex 20s;
+  transform: rotateY(180deg);
+  animation: animationIndex 38s;
   background: url("../multimedia/General/index/Secuencia-21.png") no-repeat;
   animation-play-state: running; }
   @media (min-width: 992px) {
@@ -143,16 +134,53 @@ html {
 @keyframes animationIndex {
   0% {
     background: url("../multimedia/General/index/caminando.gif") no-repeat;
-    transform: translateX(180%) rotateY(180deg); }
-  55% {
+    transform: rotateY(180deg) translateX(-150%); }
+  50% {
     background: url("../multimedia/General/index/caminando.gif") no-repeat;
-    transform: translateX(-20px) rotateY(180deg); }
-  55.1% {
+    transform: rotateY(180deg) translateX(0%); }
+  50.1% {
     background: url("../multimedia/General/index/saludo 1.gif") no-repeat;
-    transform: translateX(-20px) rotateY(180deg); }
+    transform: rotateY(180deg); }
   100% {
     background: url("../multimedia/General/index/Secuencia-08.png") no-repeat;
-    transform: translateX(-20px) rotateY(180deg); } }
+    transform: rotateY(180deg); } }
+
+.img--logo {
+  animation: logo 21s; }
+
+@keyframes logo {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: translateX(0); } }
+
+@media (min-width: 1400px) {
+  .welcomeSize {
+    height: 80vh; } }
+
+@media (max-width: 1400px) {
+  .welcomeSize {
+    height: 500px; } }
+
+@media (min-width: 1400px) {
+  .avatarSectionSize {
+    height: 85vh; } }
+
+@media (max-width: 1400px) {
+  .avatarSectionSize {
+    height: 550px; } }
+
+.backgroundIndexImage {
+  background: url("../multimedia/General/index/background-pixel2.jpg") no-repeat; }
+  @media (min-width: 1400px) {
+    .backgroundIndexImage {
+      background-size: 100% 1080px; } }
+  @media (min-width: 992px) and (max-width: 1400px) {
+    .backgroundIndexImage {
+      background-size: 100% 720px; } }
+  @media (max-width: 992px) {
+    .backgroundIndexImage {
+      background-size: cover; } }
 
 /*--------------------   INDEX  ---------------------------------*/
 /*---------------------Footer-----------------------*/
@@ -164,18 +192,19 @@ footer {
   width: 100%;
   font-size: smaller;
   text-decoration: none;
-  color: black; }
+  color: #E4BD96;
+  text-shadow: 2px 2px 1px black; }
   footer div p {
     margin: 0;
     padding: 0; }
 
 /*---------------------Footer-----------------------*/
-/*------------------------     Me     ---------------------------*/
+/*------------------------     ME     ---------------------------*/
 .article {
   padding: 2rem; }
 
 .article__picture {
-  height: 630px;
+  height: 700px;
   border-image: round; }
 
 .article__picture p {
@@ -185,9 +214,10 @@ footer {
   vertical-align: center; }
 
 .article__info {
-  font-size: 15px; }
+  font-size: 15px;
+  box-shadow: 0 0 24px 0 #436D89; }
 
-/*------------------------     Me     ---------------------------*/
+/*------------------------     ME     ---------------------------*/
 .services {
   padding-top: 6rem;
   padding-right: 0;
@@ -225,7 +255,7 @@ footer {
       .services .nav-services {
         height: 100%; } }
   .services .business {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #E4BD96;
     padding: 6rem; }
     .services .business h2 {
@@ -234,7 +264,7 @@ footer {
       .services .business {
         font-size: 2rem; } }
   .services .games {
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #b4d0e9;
     padding: 6rem; }
     .services .games h2 {
@@ -243,13 +273,19 @@ footer {
       .services .games {
         font-size: 2rem; } }
   .services .webpage {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding: 6rem; }
     .services .webpage h2 {
       font-size: 5rem; }
     @media (max-width: 992px) {
       .services .webpage {
         font-size: 2rem; } }
+
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none; }
 
 .skills {
   padding: 2rem;
@@ -293,40 +329,52 @@ footer {
 @keyframes contactAvatar {
   0% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-08.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-08.png") no-repeat;
+    background-position-x: center; }
   89% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-19.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-19.png") no-repeat;
+    background-position-x: center; }
   90% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-20.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-20.png") no-repeat;
+    background-position-x: center; }
   91% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-21.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-21.png") no-repeat;
+    background-position-x: center; }
   92% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-22.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-22.png") no-repeat;
+    background-position-x: center; }
   93% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-23.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-23.png") no-repeat;
+    background-position-x: center; }
   94% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-24.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-24.png") no-repeat;
+    background-position-x: center; }
   95% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-25.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-25.png") no-repeat;
+    background-position-x: center; }
   96% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-26.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-26.png") no-repeat;
+    background-position-x: center; }
   97% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-27.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-27.png") no-repeat;
+    background-position-x: center; }
   98% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-28.png") no-repeat; }
+    background: url("../multimedia/General/contact/frames/Secuencia-28.png") no-repeat;
+    background-position-x: center; }
   100% {
     transform: rotateY(180deg);
-    background: url("../multimedia/General/contact/frames/Secuencia-29.png") no-repeat; } }
+    background: url("../multimedia/General/contact/frames/Secuencia-29.png") no-repeat;
+    background-position-x: center; } }
   .contact .info {
     padding: 5px;
     background: transparent;
@@ -368,9 +416,6 @@ footer {
     height: 36px;
     transition: 0.3s;
     margin-right: 10px; }
-  .contact .info .social-links a:hover {
-    background: #149ddd;
-    color: #fff; }
   .contact .php-email-form {
     width: 100%;
     padding: 30px;
