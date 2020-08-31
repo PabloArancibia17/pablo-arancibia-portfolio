@@ -20,7 +20,11 @@ html {
 .title_font {
   font-family: 'DIN-BlackItalic', sans-serif;
   color: #436D89;
-  text-shadow: 0 0 20px #436D89; }
+  text-shadow: 0 0 20px #436D89;
+  font-size: 6rem; }
+  @media (max-width: 992px) {
+    .title_font {
+      font-size: 10rem; } }
 
 .body_font {
   font-family: 'D-DIN', sans-serif;
@@ -82,6 +86,10 @@ html {
   100% {
     transform: skewX(0); } }
 
+.mobileBtn {
+  height: 50px;
+  width: 50px; }
+
 /*------------------------Menu--------------------------*/
 .menu--textColor {
   display: block;
@@ -105,7 +113,7 @@ html {
   0% {
     transform: scale(1, 1) translate(0); }
   50% {
-    transform: scale(1.05, 1.2) translate(0);
+    transform: scale(1.05, 1.05) translate(0);
     text-shadow: 0 0 20px white; }
   100% {
     transform: scale(1, 1) translate(0); } }
@@ -286,6 +294,14 @@ footer {
   bottom: 25px;
   right: 25px;
   display: none; }
+
+.btnToTop {
+  height: 40px;
+  width: 40px; }
+  @media (max-width: 992px) {
+    .btnToTop {
+      height: 60px;
+      width: 60px; } }
 
 .skills {
   padding: 2rem;
