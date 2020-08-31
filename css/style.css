@@ -24,7 +24,7 @@ html {
   font-size: 6rem; }
   @media (max-width: 992px) {
     .title_font {
-      font-size: 10rem; } }
+      font-size: 8rem; } }
 
 .body_font {
   font-family: 'D-DIN', sans-serif;
@@ -115,12 +115,12 @@ html {
 
 @keyframes activeMenu {
   0% {
-    transform: scale(1, 1) translate(0); }
+    color: #b4d0e9; }
   50% {
-    transform: scale(1.05, 1.05) translate(0);
+    color: #436D89;
     text-shadow: 0 0 20px white; }
   100% {
-    transform: scale(1, 1) translate(0); } }
+    color: #b4d0e9; } }
 
 .menu--active:hover {
   text-decoration: none;
@@ -128,20 +128,37 @@ html {
 
 /*------------------------Menu--------------------------*/
 /*----------------------HEADER-----------------------------------*/
+/*---------------------Footer-----------------------*/
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  font-size: smaller;
+  text-decoration: none;
+  color: #E4BD96;
+  text-shadow: 2px 2px 1px black; }
+  footer div p {
+    margin: 0;
+    padding: 0; }
+
+/*---------------------Footer-----------------------*/
 /*--------------------   INDEX  ---------------------------------*/
-.imgIndex {
-  transform: rotateY(180deg);
-  animation: animationIndex 38s;
-  background: url("../multimedia/General/index/Secuencia-21.png") no-repeat;
-  animation-play-state: running; }
+@media (min-width: 992px) {
+  .imgIndex {
+    height: 550px;
+    width: 500px;
+    transform: rotateY(180deg);
+    animation: animationIndex 38s;
+    background: url("../multimedia/General/index/Secuencia-21.png") no-repeat;
+    animation-play-state: running; } }
+
+.mobileImg {
+  transform: rotateY(180deg); }
   @media (min-width: 992px) {
-    .imgIndex {
-      height: 550px;
-      width: 500px; } }
-  @media (max-width: 992px) {
-    .imgIndex {
-      height: 550px;
-      width: 400px; } }
+    .mobileImg {
+      visibility: hidden; } }
 
 @keyframes animationIndex {
   0% {
@@ -194,23 +211,6 @@ html {
     .backgroundIndexImage {
       background-size: cover; } }
 
-/*--------------------   INDEX  ---------------------------------*/
-/*---------------------Footer-----------------------*/
-footer {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-  font-size: smaller;
-  text-decoration: none;
-  color: #E4BD96;
-  text-shadow: 2px 2px 1px black; }
-  footer div p {
-    margin: 0;
-    padding: 0; }
-
-/*---------------------Footer-----------------------*/
 /*------------------------     ME     ---------------------------*/
 .article {
   padding: 2rem; }
@@ -229,7 +229,6 @@ footer {
   font-size: 15px;
   box-shadow: 0 0 24px 0 #436D89; }
 
-/*------------------------     ME     ---------------------------*/
 .services {
   padding-top: 6rem;
   padding-right: 0;
@@ -272,6 +271,9 @@ footer {
     padding: 6rem; }
     .services .business h2 {
       font-size: 5rem; }
+      @media (max-width: 992px) {
+        .services .business h2 {
+          font-size: 4rem; } }
     @media (max-width: 992px) {
       .services .business {
         font-size: 2rem; } }
@@ -281,6 +283,9 @@ footer {
     padding: 6rem; }
     .services .games h2 {
       font-size: 5rem; }
+      @media (max-width: 992px) {
+        .services .games h2 {
+          font-size: 4rem; } }
     @media (max-width: 992px) {
       .services .games {
         font-size: 2rem; } }
@@ -289,6 +294,9 @@ footer {
     padding: 6rem; }
     .services .webpage h2 {
       font-size: 5rem; }
+      @media (max-width: 992px) {
+        .services .webpage h2 {
+          font-size: 4rem; } }
     @media (max-width: 992px) {
       .services .webpage {
         font-size: 2rem; } }
@@ -327,6 +335,9 @@ footer {
       display: block;
       font-size: medium;
       color: #050d18; }
+      @media (max-width: 600px) {
+        .skills .progress .skill {
+          font-size: small; } }
       .skills .progress .skill .val {
         float: right;
         font-style: normal; }
