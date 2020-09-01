@@ -440,7 +440,7 @@ footer {
     font-size: 14px; }
   @media (max-width: 600px) {
     .contact .fontMailMobile {
-      font-size: smaller; } }
+      font-size: 8px; } }
   .contact .info .email p {
     padding-top: 5px; }
   .contact .info .social-links {
