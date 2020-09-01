@@ -47,6 +47,9 @@ html {
   color: white;
   box-shadow: 0 0 10px blue; }
 
+.myButtonSize:hover {
+  transform: scale(1.1); }
+
 /*---------------------GENERAL----------------------------------*/
 /*----------------------HEADER-----------------------------------*/
 .header .imgHeader {
@@ -356,6 +359,10 @@ footer {
     height: 10px;
     transition: .9s;
     background-color: #436D89; }
+  .skills .resumeBtn {
+    text-decoration: none;
+    color: white;
+    font-family: 'DIN-BlackItalic', sans-serif; }
 
 /*------------------------     FORM     ---------------------------*/
 .contact {

@@ -68,6 +68,10 @@ html {
   box-shadow: 0 0 10px blue;
 }
 
+.myButtonSize:hover{
+  transform: scale(1.1);
+}
+
 
 
 /*---------------------GENERAL----------------------------------*/
@@ -508,6 +512,12 @@ footer{
     transition: .9s;
     background-color: $tittleColor;
   }
+  
+  .resumeBtn{
+    text-decoration: none; 
+    color: white; 
+    font-family: 'DIN-BlackItalic', sans-serif;
+  }  
 
 }
 
