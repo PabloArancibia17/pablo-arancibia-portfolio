@@ -42,7 +42,7 @@ html {
   @media (max-width: 600px) {
     font-size: 4rem;
   }
-  }
+}
   
 
 
@@ -66,10 +66,13 @@ html {
   background-color: $tittleColor;
   color: white;
   box-shadow: 0 0 10px blue;
+  text-decoration: none;
+  font-family: 'DIN-BlackItalic', sans-serif;
 }
 
 .myButtonSize:hover{
   transform: scale(1.1);
+  text-decoration: none;
 }
 
 
@@ -511,13 +514,7 @@ footer{
     height: 10px;
     transition: .9s;
     background-color: $tittleColor;
-  }
-  
-  .resumeBtn{
-    text-decoration: none; 
-    color: white; 
-    font-family: 'DIN-BlackItalic', sans-serif;
-  }  
+  }   
 
 }
 

@@ -45,10 +45,13 @@ html {
   border-radius: .6rem;
   background-color: #436D89;
   color: white;
-  box-shadow: 0 0 10px blue; }
+  box-shadow: 0 0 10px blue;
+  text-decoration: none;
+  font-family: 'DIN-BlackItalic', sans-serif; }
 
 .myButtonSize:hover {
-  transform: scale(1.1); }
+  transform: scale(1.1);
+  text-decoration: none; }
 
 /*---------------------GENERAL----------------------------------*/
 /*----------------------HEADER-----------------------------------*/
@@ -359,10 +362,6 @@ footer {
     height: 10px;
     transition: .9s;
     background-color: #436D89; }
-  .skills .resumeBtn {
-    text-decoration: none;
-    color: white;
-    font-family: 'DIN-BlackItalic', sans-serif; }
 
 /*------------------------     FORM     ---------------------------*/
 .contact {
