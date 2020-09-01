@@ -315,6 +315,9 @@ footer{
 .article__picture {
   height: 700px;
   border-image: round;
+  @media (max-width: 600px) {
+    height: 500px;
+  }
 }
 
 .article__picture p {
@@ -616,6 +619,12 @@ footer{
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
+  }
+  
+  .fontMailMobile{
+    @media (min-width: 600px) {
+      font-size: small;
+    }
   }
 
   .info .email p {

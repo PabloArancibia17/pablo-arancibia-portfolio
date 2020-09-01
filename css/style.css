@@ -221,6 +221,9 @@ footer {
 .article__picture {
   height: 700px;
   border-image: round; }
+  @media (max-width: 600px) {
+    .article__picture {
+      height: 500px; } }
 
 .article__picture p {
   color: bisque; }
@@ -435,6 +438,9 @@ footer {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px; }
+  @media (min-width: 600px) {
+    .contact .fontMailMobile {
+      font-size: small; } }
   .contact .info .email p {
     padding-top: 5px; }
   .contact .info .social-links {
