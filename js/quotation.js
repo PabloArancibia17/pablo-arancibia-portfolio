@@ -1,4 +1,6 @@
-﻿let priceService = [business = 0, games = 0, web = 0];
+﻿window.onload = function (){
+    
+let priceService = [business = 0, games = 0, web = 0];
 let nameService = ["business", "videogame", "webpage"]
 let serviceMultiplier = [1, 4, 2];
 
@@ -7,6 +9,8 @@ let totalPrice = 0;
 let clientService = new Service(priceService, nameService);
 let message = new PriceMessage(totalPrice);
 console.log(clientService);
+
+
 
 
 //Función encargada de dar mensajes a los usuarios
@@ -35,21 +39,22 @@ function PriceMessage(price) {
 }
 
 //Función encargada de calcular el precio del servicio
-function Service(price, name) {
-    this.price = price;
-    this.name = name;       
-    
+function Service() {
+    let price = 0;
+    // this.price = price;
+    // this.name = name;       
+
     for (let i = 0; i < 3; i++) {
         let answer = prompt("Are you interested in a " + nameService[i] + " service? (Please answer with " +
             "´yes´ or ´no´").toLowerCase();
-        
-        while (answer !== "yes" && answer !== "no"){
+
+        while (answer !== "yes" && answer !== "no") {
             answer = prompt("That's not a valid option. Please answer with ´yes´ or ´no´");
         }
-        
-        if (answer === "yes"){
-            Price();            
-        } else{
+
+        if (answer === "yes") {
+            Price();
+        } else {
             price = 0;
         }
 
@@ -60,15 +65,16 @@ function Service(price, name) {
             while (Number.isNaN(quality) || (quality > 5) || (quality <= 0)) {
                 quality = parseInt(prompt("That's not a valid number. Please rate from 1 (standard service) to 5 (top quality service)"));
             }
-          
+
             price = servicePrice * quality * serviceMultiplier[i];
 
 
         }
-                
+
         priceService[i] = price;
         totalPrice += priceService[i];
     }
+}
 }
 
 //---------------TESTING----------------
