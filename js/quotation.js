@@ -1,14 +1,16 @@
-﻿window.onload = function (){
+﻿
+
+    let priceService = [business = 0, games = 0, web = 0];
+    let nameService = ["business", "videogame", "webpage"]
+    let serviceMultiplier = [1, 4, 2];
+
+    let totalPrice = 0;
     
-let priceService = [business = 0, games = 0, web = 0];
-let nameService = ["business", "videogame", "webpage"]
-let serviceMultiplier = [1, 4, 2];
-
-let totalPrice = 0;
-
-let clientService = new Service(priceService, nameService);
-let message = new PriceMessage(totalPrice);
-console.log(clientService);
+window.onload = function () {
+    let clientService = new Service(priceService, nameService);
+    let message = new PriceMessage(totalPrice);
+    console.log(clientService);
+}
 
 
 
@@ -29,6 +31,17 @@ function PriceMessage(price) {
         quotationPrice.innerHTML = "Thanks for your time! Your estimated service quote is: ";
         priceText.innerText = "$ " + price;
         priceText.setAttribute("class", "card-text btn btn-danger btn-lg btn-block");
+        priceText.addEventListener("mouseover", changeColor);
+        priceText.addEventListener("mouseout", changeColor);
+        function changeColor(event){
+            if (event.type === "mouseover") {
+                this.style.background = 'black';
+            }
+            if (event.type === "mouseout") {
+                this.style.background = "#DC3545";
+            }
+            
+        }
         priceText.setAttribute("style", "font-size: 15px;");
         // alert("Thanks for your time! Your estimated service quote is: $" + price);
     }
@@ -74,7 +87,7 @@ function Service() {
         priceService[i] = price;
         totalPrice += priceService[i];
     }
-}
+
 }
 
 //---------------TESTING----------------
