@@ -69,10 +69,68 @@
 
 </nav>
 
-<section class="col-lg-12 col-md-12 col-sm-12 d-flex align-items-center" style="height: 70vh">
+<section class="container-fluid d-flex align-items-center justify-content-center" style="height: 70vh">
     
-    <div class="card container" style="width: 50vh; background: transparent">
-        <img src="multimedia/General/guiño%201.gif" class="card-img-top" alt="imgQuotation">
+    <form class="col-lg-5 col-md-10 col-sm-10">
+        <div id="userData">
+            <div class="form-group row was-validated">
+                <label for="inputName" class="col-sm-2 col-form-label font-weight-bold">Name</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control is-invalid" id="inputName" required></textarea>
+                    <!--                <input type="text" class="form-control" id="inputName">-->
+                </div>
+            </div>
+            <div class="form-group row was-validated">
+                <label for="inputEmail" class="col-sm-2 col-form-label font-weight-bold">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control is-invalid" id="inputEmail" checked disabled required>
+                </div>
+            </div>
+            <div id="errorMessage" class="d-flex justify-content-center align-items-center"></div>
+        </div>
+        <hr>
+
+        <div class="form-group">
+            
+            <div class="row">
+                <label class="col-sm-12 col-form-label font-weight-bold">Would you like a service of:</label><br><br>
+                <div class="col-sm-3 d-flex justify-content-center align-items-center" id="serviceToQuote" style="background: #E4BD96; border-radius: 15px">Business</div>
+                <div class="col-sm-9">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="yesAnswer" value="option1">
+                        <label class="form-check-label" for="yesAnswer">
+                            Yes
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="answer" id="noAnswer" value="option2">
+                        <label class="form-check-label" for="noAnswer">
+                            No
+                        </label>
+                    </div>                    
+                </div>                
+            </div><br><hr>
+            <div class="form-group">
+                <label class="font-weight-bold" for="rateControlSelect">Rate of your service</label>
+                <select class="form-control" id="rateControlSelect" disabled>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="button" class="btn-lg btn-primary" id="nextBtn">Next</button>
+            </div>
+        </div>
+    </form>
+    
+    <div class="col-lg-5 col-md-10 col-sm-10 card d-flex align-items-center justify-content-center" style="padding: 10vh; width: 40vh; background: transparent">
+        <img src="multimedia/General/guiño%201.gif" class="card-img-top" alt="imgQuotation"  id="showCard">
         <div class="card-body justify-content-center">
             <p class="card-text font-italic" id="quotation">(Esperando por tu respuesta)</p>
             <p class="card-text" id="price"></p><br>
@@ -84,7 +142,6 @@
     
 </section>
 
-
 <footer class="fixed-bottom">
     <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column align-items-center">
         <p>© Copyright</p>
@@ -94,18 +151,26 @@
 
 </footer>
 
-<!--JAVASCRIPT-->
-<script src="js/quotation.js"></script>
 
-<!--BOOTSTRAP IMPORT SCRIPTS-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+
+<!--BOOTSTRAP & jQuery IMPORT SCRIPTS-->
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"-->
+<!--        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"-->
+<!--        crossorigin="anonymous"></script>-->
+<script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+
+<!--JAVASCRIPT-->
+<script src="js/jquery-quotation.js"></script>
+
+
 </body>
 </html>

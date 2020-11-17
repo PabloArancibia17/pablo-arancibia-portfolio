@@ -1,18 +1,14 @@
-﻿
+﻿let priceService = [business = 0, games = 0, web = 0];
+let nameService = ["business", "videogame", "webpage"]
+let serviceMultiplier = [1, 4, 2];
 
-    let priceService = [business = 0, games = 0, web = 0];
-    let nameService = ["business", "videogame", "webpage"]
-    let serviceMultiplier = [1, 4, 2];
-
-    let totalPrice = 0;
+let totalPrice = 0;
     
 window.onload = function () {
-    let clientService = new Service(priceService, nameService);
-    let message = new PriceMessage(totalPrice);
-    console.log(clientService);
+    Service();
 }
 
-
+//jQuery ".val" para "value" nativo
 
 
 //Función encargada de dar mensajes a los usuarios
@@ -23,7 +19,7 @@ function PriceMessage(price) {
     let contactMe = document.getElementById("contactMe");
 
     if (price === 0) {
-        quotationPrice.setAttribute("class", "card-text");
+        quotationPrice.setAttribute("class", "card-text"); //para agregar atributo es .attr("class", "card-text")
         quotationPrice.innerHTML = "It looks like you don't want any service :(";
         // alert("It looks like you don't want any service :(");
     } else {
@@ -52,48 +48,96 @@ function PriceMessage(price) {
 }
 
 //Función encargada de calcular el precio del servicio
-function Service() {
-    let price = 0;
-    // this.price = price;
-    // this.name = name;       
+    function Service() {
+        let price = 0;
+        let quality = 0;
+        let i = 0;
 
-    for (let i = 0; i < 3; i++) {
-        let answer = prompt("Are you interested in a " + nameService[i] + " service? (Please answer with " +
-            "´yes´ or ´no´").toLowerCase();
+        let controlSelect = document.getElementById("rateControlSelect");
+        document.getElementById("yesAnswer").addEventListener("click", enabledRate);
+        document.getElementById("noAnswer").addEventListener("click", disableRate);
+        controlSelect.addEventListener("change", option);
 
-        while (answer !== "yes" && answer !== "no") {
-            answer = prompt("That's not a valid option. Please answer with ´yes´ or ´no´");
+        function option() {
+            let optionSelected = controlSelect.options;
+            let indexSelected = optionSelected.selectedIndex;
+            quality = optionSelected.item(indexSelected).value;
+            console.log(quality);            
         }
 
-        if (answer === "yes") {
-            Price();
-        } else {
-            price = 0;
+
+        function enabledRate() {
+            document.getElementById("rateControlSelect").disabled = false;          
         }
 
-        function Price() {
-            let servicePrice = 1000;
-            let quality = parseInt(prompt("Could you rate the service quality of the " + nameService[i] + " you want, from 1 (standard service) to 5 (top quality service)?"));
-
-            while (Number.isNaN(quality) || (quality > 5) || (quality <= 0)) {
-                quality = parseInt(prompt("That's not a valid number. Please rate from 1 (standard service) to 5 (top quality service)"));
-            }
-
-            price = servicePrice * quality * serviceMultiplier[i];
-
-
+        function disableRate() {
+            document.getElementById("rateControlSelect").disabled = true;
+            quality = 0;
         }
+        
+        
+        document.getElementById("nextBtn").addEventListener("click", addedServices);
 
-        priceService[i] = price;
-        totalPrice += priceService[i];
+        function addedServices() {
+            
+            if (i <= 2) {
+                
+                document.getElementById("serviceToQuote").innerText = nameService[i+1];
+                let servicePrice = 1000;
+                price = servicePrice * quality * serviceMultiplier[i];
+                console.log(price)
+
+
+                priceService[i] = price;
+                totalPrice += priceService[i];
+                i++;  
+            }            
+            
+            if (i === 3){
+                document.getElementById("serviceToQuote").innerText = nameService[i-1];                
+                document.getElementById("yesAnswer").disabled = true;
+                document.getElementById("noAnswer").disabled = true;
+                document.getElementById("rateControlSelect").disabled = false;
+                document.getElementById("nextBtn").remove();
+
+                new PriceMessage(totalPrice);
+
+                userPrice();
+            }            
+        }
+        
     }
-
-}
-
-//---------------TESTING----------------
-
-
-
-
-
-
+    
+    //Función para guardar datos del usuario y convertirlos a JSON
+    
+    document.getElementById("inputName").addEventListener("change", userName);
+    document.getElementById("inputEmail").addEventListener("change", userEmail);    
+    
+    function userPrice(){
+        
+        let userPrice = {
+            price : parseInt(totalPrice)
+        }
+        sessionStorage.setItem("price", userPrice.price);
+        let jsonPrice = JSON.stringify(userPrice);
+        console.log(jsonPrice);
+    }
+        
+    
+    function userName(){
+        let nameField = {
+            name : document.getElementById("inputName").value.toString().toLowerCase()            
+        }       
+        sessionStorage.setItem("name", nameField.name);
+        let jsonName = JSON.stringify(nameField);
+        console.log(jsonName);
+    }
+    
+    function userEmail(){
+        let mailField = {
+            mail : document.getElementById("inputEmail").value.toString().toLowerCase()
+        }        
+        sessionStorage.setItem("mail", mailField.mail);
+        let jsonEmail = JSON.stringify(mailField);
+        console.log(jsonEmail);
+    }

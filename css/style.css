@@ -488,3 +488,18 @@ footer {
     border-radius: 4px; }
   .contact .php-email-form button[type="submit"]:hover {
     background: #37b3ed; }
+
+  
+/*-----------------QUOTATION-----------------------------------*/
+
+#inputName::placeholder{
+    font-style: italic;
+    color: red;
+    filter: opacity(70%)
+  }
+
+#inputEmail::placeholder{
+  font-style: italic;
+  color: red;
+  filter: opacity(70%)
+  }

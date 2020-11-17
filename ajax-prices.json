@@ -1,0 +1,7 @@
+﻿{
+  "servicios":[
+    {"tipo":"Business","precio":1000},
+    {"tipo":"Games","precio":4000},
+    {"tipo":"Webpage","precio":2000}
+  ]  
+}
